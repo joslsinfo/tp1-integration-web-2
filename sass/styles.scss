@@ -21,7 +21,7 @@ body {
   margin: 0 auto;
 }
 
-//====== navigation principale ======//
+//====== heander et navigation principale ======//
 .nav {
   display: flex;
   justify-content: space-between;
@@ -60,7 +60,7 @@ body {
   opacity: 0.9;
 }
 
-//===== banniere-carrousel =====//
+//===== section 1 -carrousel =====//
 .banniere {
   border: 1px solid #060606;
   //   width: 640px;
@@ -100,17 +100,23 @@ body {
 }
 // ===== fin banniere-carrousel =====//
 
-// ===================Section 1=========================//
+// =========Section 2 Newsletter + Gros texte important =========//
 
-// ==================Section 2==================//
+// =========Section 3 GRID ========//
 
-// =================Footer================//
+// =========Section 4 Statistiques ========//
+
+// =========Section 5 Cards ========//
+
+// =========Section 6 MAP + formulaire ========//
+
+// =========Footer==========//
 
 i {
   padding-right: 1rem;
 }
 
-.navigationFooter {
+.navFooter {
   display: flex;
   justify-content: space-between;
   padding: 2rem 0 2rem 2rem;
@@ -118,14 +124,14 @@ i {
   text-decoration: underline;
 }
 
-.navigationFooter,
-.navigationFooter__liste {
+.navFooter,
+.navFooter__liste {
   display: inline-block;
   padding: 1rem 0 1rem 1rem;
   text-decoration: none;
 }
 
-.navigation__logoFooter {
+.nav__logoFooter {
   text-align: center;
   margin-top: 1.8rem;
 }
