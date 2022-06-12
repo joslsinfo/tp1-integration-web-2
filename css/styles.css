@@ -11,7 +11,7 @@ body {
   font-family: "Open Sans", sans-serif;
   line-height: 1.5;
   font-size: 1.2rem;
-  background-color: #f7f7f8;
+  background-color: #f2e9e4;
   color: #060606;
 }
 
@@ -116,9 +116,10 @@ body {
 }
 i {
   padding-right: 1rem;
+  color: #22223B;
 }
 
-.navigationFooter {
+.navFooter {
   display: flex;
   justify-content: space-between;
   padding: 2rem 0 2rem 2rem;
@@ -126,14 +127,14 @@ i {
   text-decoration: underline;
 }
 
-.navigationFooter,
-.navigationFooter__liste {
+.navFooter,
+.navFooter__liste {
   display: inline-block;
   padding: 1rem 0 1rem 1rem;
   text-decoration: none;
 }
 
-.navigation__logoFooter {
+.nav__logoFooter {
   text-align: center;
   margin-top: 1.8rem;
 }
