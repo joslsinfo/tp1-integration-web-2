@@ -1,138 +1,232 @@
 <!DOCTYPE html>
 <html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Bienvenue au Refuge Mimine</title>
+    <meta
+      name="description"
+      content="Page d'accueil du site web page unique du refuge Mimine qui reccueille les chats perdus ou abandonnés"
+    />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-<head>
-  <meta charset="utf-8" />
-  <title>Bienvenue au Refuge Mimine</title>
-  <meta name="description" content="Page d'accueil du site web page unique du refuge Mimine qui reccueille les chats perdus ou abandonnés" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="css/normalize.css"
+      media="all"
+    />
+    <link rel="stylesheet" type="text/css" href="css/styles.css" media="all" />
+    <link rel="icon" href="favicon-minou.png" />
 
-  <link rel="stylesheet" type="text/css" href="css/normalize.css" media="all" />
-  <link rel="stylesheet" type="text/css" href="css/styles.css" media="all" />
-  <link rel="icon" href="favicon-minou.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-    integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head>
+  <body>
+    <!-- Header et nav -->
+    <header>
+      <div class="container">
+        <img
+          class="header__logo"
+          src="images/logorefugeMinou.png"
+          alt="logo refuge minou"
+        />
+        <h1 class="container">Refuge Mimine</h1>
+        <nav class="nav">
+          <ul class="nav__ul">
+            <li class="nav__liste"><a href="#section1">Galerie</a></li>
+            <li class="nav__liste"><a href="#section2">À propos</a></li>
+            <li class="nav__liste"><a href="#section3">menu3</a></li>
+            <li class="nav__liste"><a href="#section4">menu4</a></li>
+            <li class="nav__liste"><a href="#section5">menu5</a></li>
+            <li class="nav__liste"><a href="#section6">menu6</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
 
-<body>
-  <!-- Header et nav -->
-  <header>
-    <div class="container">
-      <img class="header__logo" src="images/logorefugeMinou.png" alt="logo refuge minou" />
-      <h1 class="container">Refuge Mimine</h1>
-      <nav class="nav">
-        <ul class="nav__ul">
-          <li class="nav__liste"><a href="#section1">Galerie</a></li>
-          <li class="nav__liste"><a href="#section2">À propos</a></li>
-          <li class="nav__liste"><a href="#section3">menu3</a></li>
-          <li class="nav__liste"><a href="#section4">menu4</a></li>
-          <li class="nav__liste"><a href="#section5">menu5</a></li>
-          <li class="nav__liste"><a href="#section6">menu6</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+    <main>
+      <!-- Section carroussel -->
+      <section id="section1">
+        <div class="banniere container">
+          <div class="banniere__images">
+            <img src="images/bigchat.jpg" alt="image1" />
+            <img src="images/doublechat.jpg" alt="image2" />
+            <img src="images/CatBeachSunrise.jpg" alt="image3" />
+            <img src="images/lovechat.jpg" alt="image4" />
+          </div>
+        </div>
+      </section>
 
-  <main>
-    <!-- Section carroussel -->
-    <section id="section1">
-      <div class="banniere container">
-        <div class="banniere__images">
-          <img src="images/bigchat.jpg" alt="image1" />
-          <img src="images/doublechat.jpg" alt="image2" />
-          <img src="images/CatBeachSunrise.jpg" alt="image3" />
-          <img src="images/lovechat.jpg" alt="image4" />
+      <!-- Section Newsletter + gros text important -->
+      <section id="section2" class="container"></section>
+
+      <!-- Section Grid -->
+      <section id="section3" class="container"></section>
+
+      <!-- Section Statistiques -->
+      <section id="section4" class="container"></section>
+
+      <!-- Section Cards -->
+      <section id="section5" class="container"></section>
+
+      <!-- Section MAP + formulaire -->
+      <section id="section6" class="container">
+        <h2 class="mapTitle"></h2>
+        <div id="sectionMapForm" class="container">
+          <div class="contacts">
+            <iframe
+              class="contacts__map"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d89393.76281944168!2d-73.86143869862897!3d45.55927493566682!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cc9217b64f9727f%3A0x879eb3d97166368f!2sLe%20Berger%20Blanc%20-%20Laval!5e0!3m2!1sfr!2sca!4v1655153574530!5m2!1sfr!2sca"
+              width="600"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+
+            <div class="contacts__form">
+              <h2 class="contacts__title">Contactez-nous</h2>
+              <form id="formulaire" method="post" action="index.html">
+                <fieldset>
+                  <legend class="contacts__legend">Informations</legend>
+
+                  <label for="nom"> <span class="champrequis"></span></label>
+                  <input
+                    type="text"
+                    id="nom"
+                    name="nom"
+                    minlength="2"
+                    maxlength="50"
+                    placeholder="Nom de famille "
+                    class="contacts__txtInput"
+                    required
+                  />
+
+                  <label for="prenom"><span class="champrequis"></span> </label>
+                  <input
+                    type="text"
+                    id="prenom"
+                    name="prenom"
+                    minlength="2"
+                    maxlength="50"
+                    placeholder="Prénom"
+                    class="contacts__txtInput"
+                    required
+                  />
+
+                  <div>
+                    <label for="mail"> </label>
+                    <input
+                      type="email"
+                      id="mail"
+                      name="mail"
+                      aria-describedby="informationsEmail"
+                      placeholder="xxxx@mail.com"
+                      title="Rentrer votre courriel votrecourriel@gmail.com par exemple"
+                      class="contacts__txtMail"
+                      required
+                    />
+                  </div>
+
+                  <div>
+                    <label for="message"></label>
+                    <textarea
+                      id="message"
+                      name="message"
+                      rows="4"
+                      cols="50"
+                      placeholder="Laisser votre message ici..."
+                      class="contacts__txtArea"
+                    ></textarea>
+                  </div>
+                  <div>
+                    <input
+                      class="contacts__btn"
+                      type="submit"
+                      id="envoyer"
+                      name="envoyer"
+                      value="Envoyer"
+                    />
+                  </div>
+                </fieldset>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="nav__logoFooter">
+          <img src="images/lovechat.jpg" alt="image1" />
+        </div>
+
+        <nav class="navFooter container">
+          <ul class="navFooter">
+            <li class="navFooter__liste">
+              <a href="#About_us">About us</a>
+            </li>
+            <li class="navFooter__liste">
+              <a href="#Features">Features</a>
+            </li>
+            <li class="navFooter__liste">
+              <a href="#Pricing">Pricing</a>
+            </li>
+            <li class="navFooter__liste">
+              <a href="#Career">Career</a>
+            </li>
+            <li class="navFooter__liste"><a href="#FAQs">FAQs</a></li>
+            <li class="navFooter__liste">
+              <a href="#Privacy_policy">Privacy policy</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="reseauInfos">
+          <p>
+            Fait par : Saintus Jean Oldor - Angélique Pellizzari - Lindsay
+            Lemire
+          </p>
+          <p>
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-twitter-square"></i>
+            <i class="fab fa-instagram"></i><i class="fab fa-youtube"></i>
+          </p>
+
+          <p>
+            <a class="btn-tel" href="tel:+15147308206">
+              <img
+                class="img-tel-courriel"
+                src="images/img-phone2.png"
+                alt="logo phone"
+              />
+              5147308206</a
+            >
+          </p>
+
+          <p>
+            <a class="reseauInfos__mail" href="mailto:josinfo@gmail.com">
+              <img
+                class="reseauInfos__img"
+                src="images/img-mail2.png"
+                alt="logo mail"
+              />josinfo@gmail.com</a
+            >
+          </p>
         </div>
       </div>
-    </section>
-
-    <!-- Section Newsletter + gros text important -->
-    <section id="section2" class="container">
-
-    </section>
-
-    <!-- Section Grid -->
-    <section id="section3" class="container">
-
-    </section>
-
-    <!-- Section Statistiques -->
-    <section id="section4" class="container">
-
-    </section>
-
-    <!-- Section Cards -->
-    <section id="section5" class="container">
-
-    </section>
-
-    <!-- Section MAP + formulaire -->
-    <section id="section6" class="container">
-      <h2 class="mapTitle">Map</h2>
-      <div class="map">
-        <p class="map__elem">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2792.9781430571998!2d-73.75405214958228!3d45.57087813423851!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cc923c2f2b35b25%3A0x8dc78c196de6eb4a!2sCF%20Carrefour%20Laval!5e0!3m2!1sfr!2sca!4v1641982921159!5m2!1sfr!2sca"
-            width="800" height="600" style="border: 0" allowfullscreen="" loading="lazy"></iframe>
-        </p>
-      </div>
-    </section>
-  </main>
-
-  <!-- Footer -->
-  <footer>
-    <div class="container">
-      <div class="nav__logoFooter">
-        <img src="images/lovechat.jpg" alt="image1" />
-      </div>
-
-      <nav class="navFooter container">
-        <ul class="navFooter">
-          <li class="navFooter__liste">
-            <a href="#About_us">About us</a>
-          </li>
-          <li class="navFooter__liste">
-            <a href="#Features">Features</a>
-          </li>
-          <li class="navFooter__liste">
-            <a href="#Pricing">Pricing</a>
-          </li>
-          <li class="navFooter__liste">
-            <a href="#Career">Career</a>
-          </li>
-          <li class="navFooter__liste"><a href="#FAQs">FAQs</a></li>
-          <li class="navFooter__liste">
-            <a href="#Privacy_policy">Privacy policy</a>
-          </li>
-        </ul>
-      </nav>
-      <div class="reseauInfos">
-        <p>
-          Fait par : Saintus Jean Oldor - Angélique Pellizzari - Lindsay
-          Lemire
-        </p>
-        <p>
-          <i class="fab fa-facebook"></i>
-          <i class="fab fa-twitter-square"></i>
-          <i class="fab fa-instagram"></i><i class="fab fa-youtube"></i>
-        </p>
-
-        <p>
-          <a class="btn-tel" href="tel:+15147308206">
-            <img class="img-tel-courriel" src="images/img-phone2.png" alt="logo phone" />
-            5147308206</a>
-        </p>
-
-        <p>
-          <a class="reseauInfos__mail" href="mailto:josinfo@gmail.com">
-            <img class="reseauInfos__img" src="images/img-mail2.png" alt="logo mail" />josinfo@gmail.com</a>
-        </p>
-      </div>
-    </div>
-  </footer>
-</body>
-
+    </footer>
+  </body>
 </html>
