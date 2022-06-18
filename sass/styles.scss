@@ -1,6 +1,16 @@
 /* Propriétés générales */
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400&family=Roboto:ital,wght@0,400;0,700;1,500&display=swap");
 
+  $color-bg: #f2e9e4;
+  $color-text: #14141d;
+  $color-skin: #c9ada7;
+  $color-violet: #9a8c98;
+  $color-blue1: #4a4e69;
+  $color-blue2: #383858;
+  $color-blue3: #22223b;
+  $font-title: 'Mali', cursive;
+
+
 * {
   margin: 0;
   padding: 0;
@@ -11,8 +21,18 @@ body {
   font-family: "Open Sans", sans-serif;
   line-height: 1.5;
   font-size: 1.2rem;
-  background-color: #f2e9e4;
-  color: #060606;
+  background-color: $color-bg;
+  color: $color-text;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $font-title;
+  font-weight: 500;
+  color: $color-blue3;
+}
+
+h1 {
+  font-weight: 700;
 }
 
 .container {
@@ -22,47 +42,110 @@ body {
 }
 
 //====== header et navigation principale ======//
-.nav {
+header {
+  padding: 2rem;
+  background-color: $color-skin;
+  margin-bottom: 2rem;
+}
+
+.header__logo{
   display: flex;
+  align-items: flex-start;
+  justify-content: left;
+}
+
+.logo {
+  width: 15%;
+}
+
+.header__nav--flex {
+  display: flex;
+  flex-wrap: nowrap;
   justify-content: space-between;
-  padding: 2rem 0 2rem 2rem;
-  font-size: 1.5rem;
+  align-items: center;
 }
 
-.nav__ul {
-  list-style-type: none;
-  text-decoration: none;
+nav {
+  width: 100%;
+  margin: 0 auto;
+
+  & ul{
+    list-style-type: none;
+  }
+  
+  & ul::after{
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  & ul li{
+    float: left;
+    width: 25%;
+    text-align: center;
+    position: relative;
+  }
+
+  & li {
+    display: inline-block;
+  
+    & a {
+      display: block;
+      text-decoration: none;
+      padding: 0.5rem 1rem;
+      font-size: 1rem;
+      color: $color-blue3;
+      border-bottom: 2px solid transparent;
+    }
+  
+    & a:hover {
+      background-color: rgba(255, 255, 255, 0.20);
+      border-bottom: 2px solid $color-violet;
+      color: $color-blue1;
+    }
+  }
 }
 
-.nav__ul,
-.nav__liste {
-  display: inline-block;
-  padding: 1rem 0 1rem 1rem;
+
+nav > ul li:hover .nav__ul--sous{
+  display: block;
 }
 
-.nav__ul a {
-  text-decoration: none;
-  padding: 0.5rem 1.3rem;
-  margin-right: 1rem;
-  font-size: 1.2rem;
-}
-.nav__ul a :hover {
-  padding: 0.5rem 1.3rem;
-  margin-right: 1rem;
-  border-radius: 5px;
-  transition: color 0.2s;
+.nav__ul--sous {
+  display: none;
+  box-shadow: 0px 1px 2px #ccc;
+  background-color: $color-bg;
+  position: absolute;
+  width: 100%;
+  z-index: 1000;
+
+  & li {
+    float: none;
+    width: 100%;
+    text-align: left;
+  }
+
+  & a {
+    padding: 0.5rem 1rem;
+    border-bottom: none;
+  }
+
+  & a:hover {
+    border-bottom: none;
+    background-color: rgba(200,200,200,0.1);
+    color: $color-blue1;
+  }
 }
 
-.header__logo {
-  width: 25%;
+.nav__li--deroulant a::after{
+  content: " ▼";
+  font-size: 0.8rem;
 }
-.nav__logo:hover {
-  opacity: 0.9;
-}
+
 
 //===== section 1 -carrousel =====//
 .banniere {
-  border: 1px solid #060606;
+  border: 1px solid $color-text;
   //   width: 640px;
   //   overflow: auto;
   overflow: hidden;
@@ -114,7 +197,7 @@ body {
 
 i {
   padding-right: 1rem;
-  color: #22223B;
+  color: $color-blue3;
 }
 
 .navFooter {

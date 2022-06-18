@@ -4,10 +4,16 @@
 <head>
   <meta charset="utf-8" />
   <title>Bienvenue au Refuge Mimine</title>
-  <meta name="description" content="Page d'accueil du site web page unique du refuge Mimine qui reccueille les chats perdus ou abandonnés" />
+  <meta name="description"
+    content="Page d'accueil du site web page unique du refuge Mimine qui reccueille les chats perdus ou abandonnés" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Mali:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="css/normalize.css" media="all" />
   <link rel="stylesheet" type="text/css" href="css/styles.css" media="all" />
   <link rel="icon" href="favicon-minou.png" />
@@ -20,19 +26,26 @@
 <body>
   <!-- Header et nav -->
   <header>
-    <div class="container">
-      <img class="header__logo" src="images/logorefugeMinou.png" alt="logo refuge minou" />
-      <h1 class="container">Refuge Mimine</h1>
-      <nav class="nav">
-        <ul class="nav__ul">
-          <li class="nav__liste"><a href="#section1">Galerie</a></li>
-          <li class="nav__liste"><a href="#section2">À propos</a></li>
-          <li class="nav__liste"><a href="#section3">menu3</a></li>
-          <li class="nav__liste"><a href="#section4">menu4</a></li>
-          <li class="nav__liste"><a href="#section5">menu5</a></li>
-          <li class="nav__liste"><a href="#section6">menu6</a></li>
-        </ul>
-      </nav>
+    <div class="header__nav--flex">
+      <div class="header__logo">
+      <img class="logo" src="images/logorefugeMinou.png" alt="logo refuge minou" />
+      <h1>Refuge Mimine</h1>
+      </div>
+        <nav>
+          <ul>
+            <li><a href="#section1">Galerie</a></li>
+            <li class="nav__li--deroulant"><a href="#">Le refuge</a>
+              <ul class="nav__ul--sous">
+                <li><a href="#section2">À propos</a></li>
+                <li><a href="#section4">Statistiques</a></li>
+                <li><a href="#section5">Cards</a></li>
+              </ul>
+            </li>
+            <li><a href="#section3">Adoption</a></li>
+            <li><a href="#section6">Contact</a></li>
+          </ul>
+        </nav>
+    </div>
     </div>
   </header>
 
