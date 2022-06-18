@@ -114,9 +114,13 @@ body {
     transform: translateX(0px);
   }
 }
+.cards {
+  display: flex;
+}
+
 i {
   padding-right: 1rem;
-  color: #22223B;
+  color: #22223b;
 }
 
 .navFooter {
