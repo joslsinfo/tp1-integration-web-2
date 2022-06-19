@@ -82,7 +82,7 @@
 body {
   font-family: "Open Sans", sans-serif;
   line-height: 1.5;
-  font-size: 1.2rem;
+  font-size: 1rem;
   background-color: #f2e9e4;
   color: #060606;
 }
@@ -91,6 +91,14 @@ body {
   width: 90%;
   max-width: 1200px;
   margin: 0 auto;
+}
+
+hr {
+  width: 90%;
+  max-width: 1200px;
+  border: 1px solid #c9ada7;
+  /* a remplacer par $color-skin*/
+  margin: 20px auto;
 }
 
 .nav {
@@ -186,6 +194,35 @@ body {
     transform: translateX(0px);
   }
 }
+#section2 {
+  font-style: 300;
+}
+
+.newsletter {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+}
+
+.flex-apropos {
+  display: flex;
+  flex-wrap: nowrap;
+  margin: 1rem auto;
+}
+.flex-apropos__card {
+  width: 100%;
+  justify-content: space-between;
+}
+.flex-apropos__card--size {
+  width: 32%;
+}
+
+.img__card {
+  width: 15%;
+  border-radius: 50%;
+}
+
 .cards {
   display: flex;
 }
