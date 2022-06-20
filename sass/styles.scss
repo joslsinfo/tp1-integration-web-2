@@ -1,3 +1,7 @@
+@use "variables";
+@use "sectionCards";
+@use "sectionFormulaireMap";
+
 /* Propriétés générales */
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400&family=Roboto:ital,wght@0,400;0,700;1,500&display=swap");
 
@@ -107,9 +111,6 @@ body {
 // =========Section 4 Statistiques ========//
 
 // =========Section 5 Cards ========//
-.cards {
-  display: flex;
-}
 
 // =========Section 6 MAP + formulaire ========//
 
