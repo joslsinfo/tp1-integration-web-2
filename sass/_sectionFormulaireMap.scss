@@ -26,10 +26,6 @@
 }
 
 .contacts__form {
-  // width: 90%;
-  // height: 100%;
-  // flex: 50%;
-  // padding: 1.9rem;
   background: url(../images/felt.png);
   position: absolute;
   top: 125px;
@@ -48,23 +44,23 @@ label {
 
 input:focus,
 textarea:focus {
-  border: 2px solid #383858;
+  border: 2px solid  variables.$color-blue2;
   outline: none;
 }
 
 .contacts__txtInput {
   width: 40%;
   height: 2rem;
-  color: #383858;
-  border: 1px solid #383858;
+  color:  variables.$color-blue2;
+  border: 1px solid  variables.$color-blue2;
   border-radius: 0.5rem;
   outline: none;
   margin-bottom: 1.3rem;
   padding: 1.3rem;
   margin-left: 1.3rem;
   background: url(../images/ep_naturalwhite.png);
-  caret-color: #14141d;
-  // caret-color: red;
+  caret-color:  variables.$color-text;
+ 
 }
 
 .contacts__txtMail {
@@ -83,9 +79,9 @@ textarea:focus {
   width: 30%;
   border: none;
   outline: none;
-  background-color: #383858;
+  background-color:  variables.$color-blue2;
   padding: 0.5rem 0.7rem;
-  color: #f2e9e4;
+  color:  variables.$color-bg;
   margin: 0 0 1rem 1.3rem;
   font-size: 1.8rem;
   &:focus {
@@ -94,8 +90,8 @@ textarea:focus {
   }
 
   &:hover {
-    background-color: #4a4e69;
-    color: #f2e9e4;
+    background-color:  variables.$color-blue1;
+    color:  variables.$color-bg;
     cursor: pointer;
   }
 }
