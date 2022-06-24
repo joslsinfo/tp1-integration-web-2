@@ -176,7 +176,12 @@ body {
   color: #14141d;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: "Mali", cursive;
   font-weight: 500;
   color: #22223b;
@@ -379,6 +384,54 @@ nav > ul li:hover .nav__ul--sous {
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-areas: ". . . img2 img2 img2 img2 img2 img2 . . . ." "img1 img1 img1 img2 img2 img2 img2 img2 img2 img5 img5 . ." "img1 img1 img1 img2 img2 img2 img2 img2 img2 img5 img5 img6 img6" "img1 img1 img1 img3 img3 img4 img4 img4 img4 img4 img4 img6 img6" ". . . img3 img3 img4 img4 img4 img4 img4 img4 img6 img6" ". . . . . img4 img4 img4 img4 img4 img4 . .";
   text-align: center;
+}
+
+.statistique {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+.statistique img {
+  width: 33%;
+}
+
+.statistique__text {
+  width: 60%;
+}
+.statistique__text h3 {
+  margin-top: 5%;
+  margin-bottom: 2%;
+}
+
+.statistique__text--important {
+  font-family: "Mali", cursive;
+  font-weight: 900;
+  font-size: 150%;
+  margin-bottom: -2%;
+}
+
+.statistique__text--flex {
+  display: flex;
+}
+
+.statistique__button {
+  text-decoration: none;
+  background-color: #f2e9e4;
+  color: #14141d;
+  font-weight: 800;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-top: 5%;
+  border: 3px solid #14141d;
+}
+.statistique__button:hover {
+  background-color: #14141d;
+  color: #f2e9e4;
+  border: 3px solid #22223b;
 }
 
 i {
