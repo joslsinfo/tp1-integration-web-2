@@ -1,2 +1,12 @@
-$txt-color-principal: #060606;
-$lighten-color: lighten($txt-color-principal, 30%);
+$color-bg: #f2e9e4;
+$color-text: #14141d;
+$color-skin: #c9ada7;
+$color-violet: #9a8c98;
+$color-blue1: #4a4e69;
+$color-blue2: #383858;
+$color-blue3: #22223b;
+$font-title: 'Mali', cursive;
+
+// $txt-color-principal: #060606;
+// $color-text: #14141d;
+$lighten-color: lighten($color-text, 30%);

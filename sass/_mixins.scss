@@ -1,0 +1,18 @@
+@mixin transformation($valeur-opa, $valeur-trans, $color ){
+    opacity: $valeur-opa;
+    transform: scale($valeur-trans);
+    color:$color;
+}
+
+@mixin transform-bordure($props...){
+    border-radius:$props;
+
+
+}
+
+@mixin rotation($rotat...){
+    -webkit-transition: $rotat;
+     transition: $rotat;
+     
+}
+
