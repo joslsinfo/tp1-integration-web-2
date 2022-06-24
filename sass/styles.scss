@@ -125,6 +125,16 @@ hr{
   flex-wrap: nowrap;
   margin: 1rem auto;
 
+  &--bg{
+    background-color: #c9ada7;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3rem;
+    font-family: 'Shadows Into Light', cursive;
+  }
+ 
+
   &__card{
     width: 100%;
     justify-content: space-between;
@@ -138,6 +148,19 @@ hr{
 .img__card {
   width: 15%;
   border-radius: 50%;
+}
+
+.btn{
+  margin: 0.5rem 1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  border: none;
+  background-color: #383858;
+  color: #f2e9e4;
+
+  &:hover{
+    background-color: #9a8c98;
+  }
 }
 
 // =========Section 3 GRID ========//
