@@ -1,0 +1,62 @@
+@use "variables";
+@use "mixins";
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  &__liste {
+    width: 23%;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  &__elem {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  &__image {
+    // border-radius: 10px;
+    @include mixins.transform-bordure(20px);
+    @include mixins.rotation(all 0.5s ease);
+    &:hover {
+      -webkit-transform: rotate(-15deg);
+      transform: rotate(-15deg);
+
+    }
+  }
+  &__title3 {
+    font-size: 1.5rem;
+    color: variables.$color-text;
+   
+  
+    
+  }
+  &__title4 {
+    font-size: 1.2rem;
+    color: variables.$lighten-color;
+    @include mixins.transformation(1, 0.8, #383858);
+  }
+  i {
+    color: variables.$lighten-color;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .cards__liste {
+    width: 33%;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .cards__liste {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .cards__liste {
+    width: 100%;
+  }
+}

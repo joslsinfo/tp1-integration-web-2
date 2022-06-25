@@ -13,6 +13,7 @@
     />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
+<<<<<<< HEAD
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
@@ -25,51 +26,50 @@
     />
     <link rel="stylesheet" type="text/css" href="css/styles.css" media="all" />
     <link rel="icon" href="favicon-minou.png" />
+=======
+<head>
+  <meta charset="utf-8" />
+  <title>Bienvenue au Refuge Mimine</title>
+  <meta name="description"
+    content="Page d'accueil du site web page unique du refuge Mimine qui reccueille les chats perdus ou abandonnés" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+>>>>>>> ff98bf8077a02dbde571ff47dd2937bfc6ec02ba
 
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-  </head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Mali:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/normalize.css" media="all" />
+  <link rel="stylesheet" type="text/css" href="css/styles.css" media="all" />
+  <link rel="icon" href="favicon-minou.png" />
 
   <body>
-    <!-- Header et nav -->
-    <header>
-      <div class="container">
-        <img
-          class="header__logo"
-          src="images/logorefugeMinou.png"
-          alt="logo refuge minou"
-        />
-        <h1 class="container">Refuge Mimine</h1>
-        <nav class="nav">
-          <ul class="nav__ul">
-            <li class="nav__liste"><a href="#section1">Galerie</a></li>
-            <li class="nav__liste"><a href="#section2">À propos</a></li>
-            <li class="nav__liste"><a href="#section3">menu3</a></li>
-            <li class="nav__liste"><a href="#section4">menu4</a></li>
-            <li class="nav__liste"><a href="#section5">menu5</a></li>
-            <li class="nav__liste"><a href="#section6">menu6</a></li>
+  <!-- Header et nav -->
+  <header>
+    <div class="header__nav--flex">
+      <div class="header__logo">
+      <img class="logo" src="images/logorefugeMinou.png" alt="logo refuge minou" />
+      <h1>Refuge Mimine</h1>
+      </div>
+        <nav>
+          <ul>
+            <li><a href="#section1">Galerie</a></li>
+            <li class="nav__li--deroulant"><a href="#">Le refuge</a>
+              <ul class="nav__ul--sous">
+                <li><a href="#section2">À propos</a></li>
+                <li><a href="#section4">Statistiques</a></li>
+                <li><a href="#section5">Races de chats</a></li>
+              </ul>
+            </li>
+            <li><a href="#section3">Adoption</a></li>
+            <li><a href="#section6">Contact</a></li>
           </ul>
         </nav>
-      </div>
-    </header>
-
-    <main>
-      <!-- Section carroussel -->
-      <section id="section1">
-        <div class="banniere container">
-          <div class="banniere__images">
-            <img src="images/bigchat.jpg" alt="image1" />
-            <img src="images/doublechat.jpg" alt="image2" />
-            <img src="images/CatBeachSunrise.jpg" alt="image3" />
-            <img src="images/lovechat.jpg" alt="image4" />
-          </div>
-        </div>
-      </section>
+    </div>
+    </div>
+  </header>
 
       <!-- Section Newsletter + à propos -->
       <section id="section2" class="container newsletter">
@@ -113,97 +113,195 @@
       </section>
       <hr>
       <!-- Section Grid -->
-      <section id="section3" class="container"></section>
+      <section id="section3" class="container">
+        <div class="section-grid">
+  
+          <img src="images/chat-bebetigre-grid1.jpg" alt="Bébé chat trigré" id="image-grid1">
+  
+          <img src="images/chat-noirblanc-grid2.jpg" alt="Chat noir et blanc" id="image-grid2">
+  
+          <img src="images/chat-caresse-grid3.jpg" alt="Chat caressé roux" id="image-grid3">
+  
+          <img src="images/chat-gris-grid4.jpg" alt="Chat gris" id="image-grid4">
+  
+          <img src="images/chat-noir-grid5.jpg" alt="Chat noir" id="image-grid5">
+  
+          <img src="images/bigchat-grid6.jpg" alt="Chat de beingal" id="image-grid6">
+  
+        </div>
+      </section>
 
       <!-- Section Statistiques -->
       <section id="section4" class="container"></section>
  
       <!-- Section Cards -->
-      <section id="section5" class="container"></section>
+      <section id="section5" class="container">
+        <div class="cards__elem">
+          <h2>Races de chats</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta
+            harum sequi provident veniam similique et reprehenderit inventore
+            exercitationem debitis architecto?
+          </p>
+        </div>
+
+        <div class="cards container">
+          <div class="cards__liste">
+            <img
+              class="cards__image"
+              src="images/img-client1.png"
+              alt="Image de la personne a"
+            />
+            <h3 class="cards__title3">Leslie Alexander</h3>
+            <h4 class="cards__title4">Co-founder & CEO</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora
+              ea eius, ipsum dolorum reprehenderit suscipit?
+            </p>
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-twitter-square"></i>
+            <i class="fab fa-instagram"></i>
+          </div>
+
+          <div class="cards__liste">
+            <img
+              class="cards__image"
+              src="images/img-client3.png"
+              alt="Image de la personne b"
+            />
+            <h3 class="cards__title3">Diane Russell</h3>
+            <h4 class="cards__title4">Co-founder</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora
+              ea eius, ipsum dolorum reprehenderit suscipit?
+            </p>
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-twitter-square"></i>
+            <i class="fab fa-instagram"></i>
+          </div>
+
+          <div class="cards__liste">
+            <img
+              class="cards__image"
+              src="images/img-client2.png"
+              alt="Image de la personne c"
+            />
+            <h3 class="cards__title3">Jerome Bell</h3>
+            <h4 class="cards__title4">CTO</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora
+              ea eius, ipsum dolorum reprehenderit suscipit?
+            </p>
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-twitter-square"></i>
+            <i class="fab fa-instagram"></i>
+          </div>
+
+          <div class="cards__liste">
+            <img
+              class="cards__image"
+              src="images/img-client4.png"
+              alt="Image de la personne d"
+            />
+            <h3 class="cards__title3">Jane Cooper</h3>
+            <h4 class="cards__title4 cards__title4--active">SMM</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora
+              ea eius, ipsum dolorum reprehenderit suscipit?
+            </p>
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-twitter-square"></i>
+            <i class="fab fa-instagram"></i>
+          </div>
+        </div>
+      </section>
 
       <!-- Section MAP + formulaire -->
       <section id="section6" class="container">
         <h2 class="mapTitle"></h2>
-        <div id="sectionMapForm" class="container">
-          <div class="contacts">
-            <iframe
-              class="contacts__map"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d89393.76281944168!2d-73.86143869862897!3d45.55927493566682!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cc9217b64f9727f%3A0x879eb3d97166368f!2sLe%20Berger%20Blanc%20-%20Laval!5e0!3m2!1sfr!2sca!4v1655153574530!5m2!1sfr!2sca"
-              width="600"
-              height="450"
-              style="border: 0"
-              allowfullscreen=""
-              loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"
-            ></iframe>
+        <div class="contacts">
+          <iframe
+            class="contacts__map"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d89393.76281944168!2d-73.86143869862897!3d45.55927493566682!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cc9217b64f9727f%3A0x879eb3d97166368f!2sLe%20Berger%20Blanc%20-%20Laval!5e0!3m2!1sfr!2sca!4v1655153574530!5m2!1sfr!2sca"
+            width="600"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
 
-            <div class="contacts__form">
-              <h2 class="contacts__title">Contactez-nous</h2>
-              <form id="formulaire" method="post" action="index.html">
-                <fieldset>
-                  <legend class="contacts__legend">Informations</legend>
+          <div class="contacts__form" aria-label="Contact information">
+            <h2 class="contacts__title">Contactez-nous</h2>
+            <form id="contacts__formulaire" method="post" action="index.html">
+              <fieldset>
+                <legend class="contacts__legend">Informations</legend>
 
-                  <label for="nom"> <span class="champrequis"></span></label>
+                <label for="nom"
+                  >Votre nom : <span class="champrequis"></span
+                ></label>
+                <input
+                  type="text"
+                  id="nom"
+                  name="nom"
+                  minlength="2"
+                  maxlength="50"
+                  placeholder="Nom de famille "
+                  class="contacts__txtInput"
+                  required
+                />
+
+                <label for="prenom">
+                  Votre prénom :<span class="champrequis"></span>
+                </label>
+                <input
+                  type="text"
+                  id="prenom"
+                  name="prenom"
+                  minlength="2"
+                  maxlength="50"
+                  placeholder="Prénom"
+                  class="contacts__txtInput"
+                  required
+                />
+
+                <div>
+                  <label for="email"> Votre email : </label>
                   <input
-                    type="text"
-                    id="nom"
-                    name="nom"
-                    minlength="2"
-                    maxlength="50"
-                    placeholder="Nom de famille "
-                    class="contacts__txtInput"
+                    type="email"
+                    id="email"
+                    name="email"
+                    aria-describedby="informationsEmail"
+                    placeholder="xxxx@mail.com"
+                    title="Rentrer votre courriel votrecourriel@gmail.com par exemple"
+                    class="contacts__txtMail"
                     required
                   />
+                </div>
 
-                  <label for="prenom"><span class="champrequis"></span> </label>
-                  <input
-                    type="text"
-                    id="prenom"
-                    name="prenom"
-                    minlength="2"
-                    maxlength="50"
-                    placeholder="Prénom"
-                    class="contacts__txtInput"
+                <div>
+                  <label for="message"> Message :</label>
+                  <textarea
+                    id="message"
+                    name="message"
+                    rows="4"
+                    cols="50"
+                    placeholder="Laisser votre message ici..."
+                    class="contacts__txtArea"
                     required
+                  ></textarea>
+                </div>
+                <div>
+                  <input
+                    class="contacts__btn contacts__btn--active"
+                    type="submit"
+                    id="envoyer"
+                    name="envoyer"
+                    value="Envoyer"
                   />
-
-                  <div>
-                    <label for="mail"> </label>
-                    <input
-                      type="email"
-                      id="mail"
-                      name="mail"
-                      aria-describedby="informationsEmail"
-                      placeholder="xxxx@mail.com"
-                      title="Rentrer votre courriel votrecourriel@gmail.com par exemple"
-                      class="contacts__txtMail"
-                      required
-                    />
-                  </div>
-
-                  <div>
-                    <label for="message"></label>
-                    <textarea
-                      id="message"
-                      name="message"
-                      rows="4"
-                      cols="50"
-                      placeholder="Laisser votre message ici..."
-                      class="contacts__txtArea"
-                    ></textarea>
-                  </div>
-                  <div>
-                    <input
-                      class="contacts__btn"
-                      type="submit"
-                      id="envoyer"
-                      name="envoyer"
-                      value="Envoyer"
-                    />
-                  </div>
-                </fieldset>
-              </form>
-            </div>
+                </div>
+              </fieldset>
+            </form>
           </div>
         </div>
       </section>
