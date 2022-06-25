@@ -1,5 +1,6 @@
 @use "sectionFormulaireMap";
 @use "sectionGrid";
+@use "sectionStatistique";
 
 /* Propriétés générales */
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400&family=Roboto:ital,wght@0,400;0,700;1,500&display=swap");
@@ -178,8 +179,6 @@ hr{
     background-color: #9a8c98;
   }
 }
-
-// =========Section 4 Statistiques ========//
 
 // =========Section 5 Cards ========//
 .cards {

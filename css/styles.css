@@ -163,6 +163,54 @@ textarea:focus {
   text-align: center;
 }
 
+.statistique {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+.statistique img {
+  width: 33%;
+}
+
+.statistique__text {
+  width: 60%;
+}
+.statistique__text h3 {
+  margin-top: 5%;
+  margin-bottom: 2%;
+}
+
+.statistique__text--important {
+  font-family: "Mali", cursive;
+  font-weight: 900;
+  font-size: 150%;
+  margin-bottom: -2%;
+}
+
+.statistique__text--flex {
+  display: flex;
+}
+
+.statistique__button {
+  text-decoration: none;
+  background-color: #f2e9e4;
+  color: #14141d;
+  font-weight: 800;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-top: 5%;
+  border: 3px solid #14141d;
+}
+.statistique__button:hover {
+  background-color: #14141d;
+  color: #f2e9e4;
+  border: 3px solid #22223b;
+}
+
 * {
   margin: 0;
   padding: 0;
