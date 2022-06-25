@@ -18,7 +18,17 @@ body {
   line-height: 1.5;
   font-size: 1rem;
   background-color: #f2e9e4;/* a remplacer par $color-bg*/
-  color: #060606;
+  color: #060606; /* a remplacer par $color-text*/
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Mali', cursive; /* a remplacer par $font-title*/
+  font-weight: 500;
+  color: #22223b; /* a remplacer par $color-blue3*/
+}
+
+h1 {
+  font-weight: 700;
 }
 
 .container {
@@ -37,7 +47,7 @@ hr{
 //====== header et navigation principale ======//
 header {
   padding: 2rem;
-  background-color: #c9ada7;
+  background-color: #c9ada7; /* a remplacer par $color-skin*/
   margin-bottom: 2rem;
 }
 
