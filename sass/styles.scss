@@ -255,6 +255,24 @@ nav > ul li:hover .nav__ul--sous{
   }
 }
 
+.btn-stat{
+  @extend .btn;
+  margin: 0.5rem 0;
+}
+
+.btn-form {
+  @extend .btn;
+  width: 30%;
+  margin: 0 0 1rem 1.3rem;
+  font-size: 1.5rem;
+
+  &:hover{
+    cursor: pointer;
+  }
+}
+
+
+
 // =========Section 5 Cards ========//
 .cards {
   display: flex;

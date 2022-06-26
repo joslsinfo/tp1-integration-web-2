@@ -28,7 +28,7 @@
 }
 
 .contacts__form {
-  background: url(../images/felt.png);
+  background-color: #c9ada7;
   position: absolute;
   top: 125px;
   bottom: 88px;
@@ -76,11 +76,11 @@ textarea:focus {
 
 .contacts__btn, .contacts__btn:focus {
   width: 30%;
-  border: none;
-  outline: none;
-  background-color: #383858;
-  padding: 0.5rem 0.7rem;
-  color: #f2e9e4;
+  /* border: none;
+   outline: none;
+   background-color:  variables.$color-blue2;
+   padding: 0.5rem 0.7rem;
+   color:  variables.$color-bg;*/
   margin: 0 0 1rem 1.3rem;
   font-size: 1.8rem;
 }
@@ -442,7 +442,7 @@ nav > ul li:hover .nav__ul--sous {
   border-radius: 50%;
 }
 
-.btn {
+.btn, .btn-form, .btn-stat {
   margin: 0.5rem 1rem;
   padding: 0.5rem 1rem;
   border-radius: 0.5rem;
@@ -452,9 +452,22 @@ nav > ul li:hover .nav__ul--sous {
   color: #f2e9e4;
   /* a remplacer par $color-bg*/
 }
-.btn:hover {
+.btn:hover, .btn-form:hover, .btn-stat:hover {
   background-color: #9a8c98;
   /* a remplacer par $color-violet*/
+}
+
+.btn-stat {
+  margin: 0.5rem 0;
+}
+
+.btn-form {
+  width: 30%;
+  margin: 0 0 1rem 1.3rem;
+  font-size: 1.5rem;
+}
+.btn-form:hover {
+  cursor: pointer;
 }
 
 .cards {

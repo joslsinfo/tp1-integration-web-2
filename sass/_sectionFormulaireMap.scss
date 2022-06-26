@@ -26,7 +26,7 @@
 }
 
 .contacts__form {
-  background: url(../images/felt.png);
+  background-color: variables.$color-skin;
   position: absolute;
   top: 125px;
   bottom: 88px;
@@ -75,7 +75,7 @@ textarea:focus {
   overflow: auto;
 }
 
-.contacts__btn {
+/*.contacts__btn {
   width: 30%;
   border: none;
   outline: none;
@@ -94,7 +94,7 @@ textarea:focus {
     color:  variables.$color-bg;
     cursor: pointer;
   }
-}
+}*/
 
 @media screen and (max-width: 960px) {
   .contacts__txtInput {
