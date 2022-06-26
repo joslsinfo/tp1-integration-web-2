@@ -33,25 +33,6 @@
   .statistique__text--flex {
     display: flex;
   }
-  
-  .statistique__button {
-    text-decoration: none;
-    background-color: variables.$color-bg;
-    color: variables.$color-text;
-    font-weight: 800;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 30px;
-    padding-right: 30px;
-    margin-top:5%;
-    border: 3px solid variables.$color-text;
-  
-    &:hover {
-      background-color: variables.$color-text;
-      color: variables.$color-bg;
-      border: 3px solid variables.$color-blue3
-    }
-  }
 
   @media screen and (max-width: 500px) {
     .statistique {
