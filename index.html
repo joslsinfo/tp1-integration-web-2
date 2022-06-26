@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
   <meta charset="utf-8" />
   <title>Bienvenue au Refuge Mimine</title>
@@ -17,36 +18,36 @@
   <link rel="stylesheet" type="text/css" href="css/styles.css" media="all" />
   <link rel="icon" href="favicon-minou.png" />
 
-  <body>
+<body>
   <!-- Header et nav -->
   <header>
     <div class="header__nav--flex">
       <div class="header__logo">
-      <img class="logo" src="images/logorefugeMinou.png" alt="logo refuge minou" href="#section1" />
-      <h1>Refuge Mimine</h1>
+        <img class="logo" src="images/logorefugeMinou.png" alt="logo refuge minou" href="#section1" />
+        <h1>Refuge Mimine</h1>
       </div>
-        <nav>
-          <ul>
-            <li><a href="#section1">Galerie</a></li>
-            <li class="nav__li--deroulant"><a href="#">Le refuge</a>
-              <ul class="nav__ul--sous">
-                <li><a href="#section2">À propos</a></li>
-                <li><a href="#section4">Statistiques</a></li>
-                <li><a href="#section5">Races de chats</a></li>
-              </ul>
-            </li>
-            <li><a href="#section3">Adoption</a></li>
-            <li><a href="#section6">Contact</a></li>
-          </ul>
-        </nav>
+      <nav>
+        <ul>
+          <li><a href="#section1">Galerie</a></li>
+          <li class="nav__li--deroulant"><a href="#">Le refuge</a>
+            <ul class="nav__ul--sous">
+              <li><a href="#section2">À propos</a></li>
+              <li><a href="#section4">Statistiques</a></li>
+              <li><a href="#section5">Races de chats</a></li>
+            </ul>
+          </li>
+          <li><a href="#section3">Adoption</a></li>
+          <li><a href="#section6">Contact</a></li>
+        </ul>
+      </nav>
     </div>
     </div>
   </header>
   <main>
     <a class="screen-reader-text" href="#section1">Aller au contenu principal</a>
 
-     <!-- Section carroussel -->
-     <section id="section1">
+    <!-- Section carroussel -->
+    <section id="section1">
       <div class="banniere container">
         <div class="banniere__images">
           <img src="images/bigchat.jpg" alt="Gros chat" />
@@ -61,320 +62,268 @@
       </div>
     </section>
     <hr>
-      <!-- Section Newsletter + à propos -->
-      <section id="section2" class="container newsletter">
-        <div>
-          <p>
+    <!-- Section Newsletter + à propos -->
+    <section id="section2" class="container newsletter">
+      <div>
+        <p>
           Inscrivez-vous à notre newsletter pour recevoir les dernières infos du Refuge</p>
-          <div>
+        <div>
           <input type="text" id="newsletter" name="newsletter" placeholder="Votre courriel">
           <button class="btn" type="submit" id="submit">S'inscrire</button>
+        </div>
+      </div>
+      <div class="flex-apropos flex-apropos--bg">
+        <p> Si vous souhaitez nous aider à soutenir la cause des animaux abandonnés,
+          vous pouvez faire un don</p>
+        <button class="btn" type="submit">Faire un don</button>
+      </div>
+      <div>
+        <h2>À propos du Refuge Mimine</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus magnam quam iusto! Sapiente, et.
+          Molestiae, commodi ad optio sint nulla molestias corrupti.</p>
+        <div class="flex-apropos flex-apropos__card">
+          <div class="flex-apropos__card--size">
+            <img class="img__card" src="images/chat-boule.jpg" alt="Illustration d'un chat en boule" />
+            <h3>Notre mission</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor minima dolorem libero ad ipsam.
+              Laborum consectetur est, ullam officia adipisci.</p>
+          </div>
+          <div class="flex-apropos__card--size">
+            <img class="img__card" src="images/chat-meuble.jpg" alt="Illustration d'un chat sous un meuble" />
+            <h3>Pourquoi choisir notre refuge ?</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Laborum consectetur est, ullam officia adipisci, facilis commodi fuga repellendus dolorum beatae.</p>
+          </div>
+          <div class="flex-apropos__card--size">
+            <img class="img__card" src="images/chat-coussin.jpg" alt="Illustration d'un chat sur un coussin" />
+            <h3>Prise en charge de votre animal</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam officia adipisci, facilis commodi fuga
+              repellendus dolorum beatae quis accusamus quasi corrupti?</p>
           </div>
         </div>
-        <div  class="flex-apropos flex-apropos--bg">
-          <p> Si vous souhaitez nous aider à soutenir la cause des animaux abandonnés,
-            vous pouvez faire un don</p>
-          <button class="btn" type="submit">Faire un don</button>
-        </div>
-        <div>
-          <h2>À propos du Refuge Mimine</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus magnam quam iusto! Sapiente, et. 
-            Molestiae, commodi ad optio sint nulla molestias corrupti.</p>
-            <div class="flex-apropos flex-apropos__card">
-              <div class="flex-apropos__card--size">
-                <img class="img__card" src="images/chat-boule.jpg" alt="Illustration d'un chat en boule" />
-                <h3>Notre mission</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor minima dolorem libero ad ipsam. 
-                  Laborum consectetur est, ullam officia adipisci.</p>
-              </div>
-              <div class="flex-apropos__card--size">
-                <img class="img__card" src="images/chat-meuble.jpg" alt="Illustration d'un chat sous un meuble" />
-                <h3>Pourquoi choisir notre refuge ?</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                  Laborum consectetur est, ullam officia adipisci, facilis commodi fuga repellendus dolorum beatae.</p>
-              </div>
-              <div class="flex-apropos__card--size">
-                <img class="img__card" src="images/chat-coussin.jpg" alt="Illustration d'un chat sur un coussin" />
-                <h3>Prise en charge de votre animal</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam officia adipisci, facilis commodi fuga repellendus dolorum beatae quis accusamus quasi corrupti?</p>
-              </div>
-            </div>
-        </div>
-      </section>
-      <hr>
-      <!-- Section Grid -->
-      <section id="section3" class="container">
-        <div class="section-grid">
-  
-          <img src="images/chat-bebetigre-grid1.jpg" alt="Bébé chat trigré" id="image-grid1">
-  
-          <img src="images/chat-noirblanc-grid2.jpg" alt="Chat noir et blanc" id="image-grid2">
-  
-          <img src="images/chat-caresse-grid3.jpg" alt="Chat caressé roux" id="image-grid3">
-  
-          <img src="images/chat-gris-grid4.jpg" alt="Chat gris" id="image-grid4">
-  
-          <img src="images/chat-noir-grid5.jpg" alt="Chat noir" id="image-grid5">
-  
-          <img src="images/bigchat-grid6.jpg" alt="Chat de beingal" id="image-grid6">
-  
-        </div>
-      </section>
-      <hr>
-      <!-- Section Statistiques -->
-      <section id="section4" class="container">
-        <div class="statistique">
-          <img src="images/image-statistique.svg" alt="statistiques">
-          <div class="statistique__text">
-            <h2>Statistiques</h2>
-            <p>Jour après jour, notre équipe joue un rôle essentiel dans le bien-être des chats abandonnés ou rescapés
-              En 2021, nous avons redoublé d'efforts pour venir en aide à des milliers d'entre eux, toutes races confondues.
-            </p>
-            <h3>Chat aidés en 2021</h3>
-            <div class="statistique__text--flex">
-              <div class="statistique__text">
-                <p class="statistique__text--important">1 337</p>
-                <p>Adoptions</p>
-              </div>
-  
-              <div class="statistique__text">
-                <p class="statistique__text--important">92,9%</p>
-                <p>Taux de survie</p>
-              </div>
-            </div>
-            <button class="btn-stat" href="#">Voir plus</button>
-          </div>
-      </section>
-      <hr>
-      <!-- Section Cards -->
-      <section id="section5" class="container">
-        <div class="cards__elem">
-          <h2>Races de chats</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta
-            harum sequi provident veniam similique et reprehenderit inventore
-            exercitationem debitis architecto?
-          </p>
-        </div>
-
-        <div class="cards container">
-          <div class="cards__liste">
-            <img
-              class="cards__image"
-              src="images/img-client1.png"
-              alt="Image de la personne a"
-            />
-            <h3 class="cards__title3">Leslie Alexander</h3>
-            <h4 class="cards__title4">Co-founder & CEO</h4>
-            <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora
-              ea eius, ipsum dolorum reprehenderit suscipit?
-            </p>
-            <i class="fab fa-facebook"></i>
-            <i class="fab fa-twitter-square"></i>
-            <i class="fab fa-instagram"></i>
-          </div>
-
-          <div class="cards__liste">
-            <img
-              class="cards__image"
-              src="images/img-client3.png"
-              alt="Image de la personne b"
-            />
-            <h3 class="cards__title3">Diane Russell</h3>
-            <h4 class="cards__title4">Co-founder</h4>
-            <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora
-              ea eius, ipsum dolorum reprehenderit suscipit?
-            </p>
-            <i class="fab fa-facebook"></i>
-            <i class="fab fa-twitter-square"></i>
-            <i class="fab fa-instagram"></i>
-          </div>
-
-          <div class="cards__liste">
-            <img
-              class="cards__image"
-              src="images/img-client2.png"
-              alt="Image de la personne c"
-            />
-            <h3 class="cards__title3">Jerome Bell</h3>
-            <h4 class="cards__title4">CTO</h4>
-            <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora
-              ea eius, ipsum dolorum reprehenderit suscipit?
-            </p>
-            <i class="fab fa-facebook"></i>
-            <i class="fab fa-twitter-square"></i>
-            <i class="fab fa-instagram"></i>
-          </div>
-
-          <div class="cards__liste">
-            <img
-              class="cards__image"
-              src="images/img-client4.png"
-              alt="Image de la personne d"
-            />
-            <h3 class="cards__title3">Jane Cooper</h3>
-            <h4 class="cards__title4 cards__title4--active">SMM</h4>
-            <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora
-              ea eius, ipsum dolorum reprehenderit suscipit?
-            </p>
-            <i class="fab fa-facebook"></i>
-            <i class="fab fa-twitter-square"></i>
-            <i class="fab fa-instagram"></i>
-          </div>
-        </div>
-      </section>
-      <hr>
-      <!-- Section MAP + formulaire -->
-      <section id="section6" class="container">
-        <h2 class="mapTitle"></h2>
-        <div class="contacts">
-          <iframe
-            class="contacts__map"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d89393.76281944168!2d-73.86143869862897!3d45.55927493566682!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cc9217b64f9727f%3A0x879eb3d97166368f!2sLe%20Berger%20Blanc%20-%20Laval!5e0!3m2!1sfr!2sca!4v1655153574530!5m2!1sfr!2sca"
-            width="600"
-            height="450"
-            style="border: 0"
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-          ></iframe>
-
-          <div class="contacts__form" aria-label="Contact information">
-            <h2 class="contacts__title">Contactez-nous</h2>
-            <p class="contacts__title">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-            <form id="contacts__formulaire" method="post" action="index.html">
-                <label for="nom"
-                  >Votre nom : <span class="champrequis"></span
-                ></label>
-                <input
-                  type="text"
-                  id="nom"
-                  name="nom"
-                  minlength="2"
-                  maxlength="50"
-                  placeholder="Nom de famille "
-                  class="contacts__txtInput"
-                  required
-                />
-
-                <label for="prenom">
-                  Votre prénom :<span class="champrequis"></span>
-                </label>
-                <input
-                  type="text"
-                  id="prenom"
-                  name="prenom"
-                  minlength="2"
-                  maxlength="50"
-                  placeholder="Prénom"
-                  class="contacts__txtInput"
-                  required
-                />
-
-                <div>
-                  <label for="email"> Votre email : </label>
-                  <input
-                    type="email"
-                    id="email"
-                    name="email"
-                    aria-describedby="informationsEmail"
-                    placeholder="xxxx@mail.com"
-                    title="Rentrer votre courriel votrecourriel@gmail.com par exemple"
-                    class="contacts__txtMail"
-                    required
-                  />
-                </div>
-
-                <div>
-                  <label for="message"> Message :</label>
-                  <textarea
-                    id="message"
-                    name="message"
-                    rows="4"
-                    cols="50"
-                    placeholder="Laisser votre message ici..."
-                    class="contacts__txtArea"
-                    required
-                  ></textarea>
-                </div>
-                <div>
-                  <input
-                    class="btn-form"
-                    type="submit"
-                    id="envoyer"
-                    name="envoyer"
-                    value="Envoyer"
-                  />
-                </div>
-            </form>
-          </div>
-        </div>
-      </section>
-    </main>
+      </div>
+    </section>
     <hr>
-    <!-- Footer -->
-    <footer>
-      <div class="container">
-        <div class="nav__logoFooter">
-          <img class="logo" src="images/logorefugeMinou.png" alt="logo refuge minou"/>
+    <!-- Section Grid -->
+    <section id="section3" class="container">
+      <div class="section-grid">
+
+        <img src="images/chat-bebetigre-grid1.jpg" alt="Bébé chat trigré" id="image-grid1">
+
+        <img src="images/chat-noirblanc-grid2.jpg" alt="Chat noir et blanc" id="image-grid2">
+
+        <img src="images/chat-caresse-grid3.jpg" alt="Chat caressé roux" id="image-grid3">
+
+        <img src="images/chat-gris-grid4.jpg" alt="Chat gris" id="image-grid4">
+
+        <img src="images/chat-noir-grid5.jpg" alt="Chat noir" id="image-grid5">
+
+        <img src="images/bigchat-grid6.jpg" alt="Chat de beingal" id="image-grid6">
+
+      </div>
+    </section>
+    <hr>
+    <!-- Section Statistiques -->
+    <section id="section4" class="container">
+      <div class="statistique">
+        <img src="images/image-statistique.svg" alt="statistiques">
+        <div class="statistique__text">
+          <h2>Statistiques</h2>
+          <p>Jour après jour, notre équipe joue un rôle essentiel dans le bien-être des chats abandonnés ou rescapés
+            En 2021, nous avons redoublé d'efforts pour venir en aide à des milliers d'entre eux, toutes races
+            confondues.
+          </p>
+          <h3>Chat aidés en 2021</h3>
+          <div class="statistique__text--flex">
+            <div class="statistique__text">
+              <p class="statistique__text--important">1 337</p>
+              <p>Adoptions</p>
+            </div>
+
+            <div class="statistique__text">
+              <p class="statistique__text--important">92,9%</p>
+              <p>Taux de survie</p>
+            </div>
+          </div>
+          <button class="btn-stat" href="#">Voir plus</button>
+        </div>
+    </section>
+    <hr>
+    <!-- Section Cards -->
+    <section id="section5" class="container">
+      <div class="cards__elem">
+        <h2>Races de chats</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta
+          harum sequi provident veniam similique et reprehenderit inventore
+          exercitationem debitis architecto?
+        </p>
+      </div>
+
+      <div class="cards container">
+        <div class="cards__liste">
+          <img class="cards__image" src="images/img-client1.png" alt="Image de la personne a" />
+          <h3 class="cards__title3">Leslie Alexander</h3>
+          <h4 class="cards__title4">Co-founder & CEO</h4>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora
+            ea eius, ipsum dolorum reprehenderit suscipit?
+          </p>
+          <i class="fab fa-facebook"></i>
+          <i class="fab fa-twitter-square"></i>
+          <i class="fab fa-instagram"></i>
         </div>
 
-        <nav class="navFooter container">
-          <ul class="navFooter">
-            <li class="navFooter__liste">
-              <a href="#About_us">About us</a>
-            </li>
-            <li class="navFooter__liste">
-              <a href="#Features">Features</a>
-            </li>
-            <li class="navFooter__liste">
-              <a href="#Pricing">Pricing</a>
-            </li>
-            <li class="navFooter__liste">
-              <a href="#Career">Career</a>
-            </li>
-            <li class="navFooter__liste"><a href="#FAQs">FAQs</a></li>
-            <li class="navFooter__liste">
-              <a href="#Privacy_policy">Privacy policy</a>
-            </li>
-          </ul>
-        </nav>
+        <div class="cards__liste">
+          <img class="cards__image" src="images/img-client3.png" alt="Image de la personne b" />
+          <h3 class="cards__title3">Diane Russell</h3>
+          <h4 class="cards__title4">Co-founder</h4>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora
+            ea eius, ipsum dolorum reprehenderit suscipit?
+          </p>
+          <i class="fab fa-facebook"></i>
+          <i class="fab fa-twitter-square"></i>
+          <i class="fab fa-instagram"></i>
+        </div>
+
+        <div class="cards__liste">
+          <img class="cards__image" src="images/img-client2.png" alt="Image de la personne c" />
+          <h3 class="cards__title3">Jerome Bell</h3>
+          <h4 class="cards__title4">CTO</h4>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora
+            ea eius, ipsum dolorum reprehenderit suscipit?
+          </p>
+          <i class="fab fa-facebook"></i>
+          <i class="fab fa-twitter-square"></i>
+          <i class="fab fa-instagram"></i>
+        </div>
+
+        <div class="cards__liste">
+          <img class="cards__image" src="images/img-client4.png" alt="Image de la personne d" />
+          <h3 class="cards__title3">Jane Cooper</h3>
+          <h4 class="cards__title4 cards__title4--active">SMM</h4>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora
+            ea eius, ipsum dolorum reprehenderit suscipit?
+          </p>
+          <i class="fab fa-facebook"></i>
+          <i class="fab fa-twitter-square"></i>
+          <i class="fab fa-instagram"></i>
+        </div>
+      </div>
+    </section>
+    <hr>
+    <!-- Section MAP + formulaire -->
+    <section id="section6" class="container">
+      <h2 class="mapTitle"></h2>
+      <div class="contacts">
+        <iframe class="contacts__map"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d89393.76281944168!2d-73.86143869862897!3d45.55927493566682!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cc9217b64f9727f%3A0x879eb3d97166368f!2sLe%20Berger%20Blanc%20-%20Laval!5e0!3m2!1sfr!2sca!4v1655153574530!5m2!1sfr!2sca"
+          width="600" height="450" style="border: 0" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        <div class="contacts__form" aria-label="Contact information">
+          <h2 class="contacts__title">Contactez-nous</h2>
+          <p class="contacts__title">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+          <form id="contacts__formulaire" method="post" action="index.html">
+            <label for="nom">Votre nom : <span class="champrequis"></span></label>
+            <input type="text" id="nom" name="nom" minlength="2" maxlength="50" placeholder="Nom de famille "
+              class="contacts__txtInput" required />
+
+            <label for="prenom">
+              Votre prénom :<span class="champrequis"></span>
+            </label>
+            <input type="text" id="prenom" name="prenom" minlength="2" maxlength="50" placeholder="Prénom"
+              class="contacts__txtInput" required />
+
+            <div>
+              <label for="email"> Votre email : </label>
+              <input type="email" id="email" name="email" aria-describedby="informationsEmail"
+                placeholder="xxxx@mail.com" title="Rentrer votre courriel votrecourriel@gmail.com par exemple"
+                class="contacts__txtMail" required />
+            </div>
+
+            <div>
+              <label for="message"> Message :</label>
+              <textarea id="message" name="message" rows="4" cols="50" placeholder="Laisser votre message ici..."
+                class="contacts__txtArea" required></textarea>
+            </div>
+            <div>
+              <input class="btn-form" type="submit" id="envoyer" name="envoyer" value="Envoyer" />
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+  <hr>
+  <!-- Footer -->
+  <footer>\
+
+    <div class="container">
+
+      <div class="footer__logo">
+        <img class="logo" src="images/logorefugeMinou.png" alt="logo refuge minou" />
+      </div>
+
+      <div class="footer__nav">
+
+            <a href="#About_us">About us</a>
+
+            <a href="#Features">Features</a>
+
+            <a href="#Pricing">Pricing</a>
+
+            <a href="#Career">Career</a>
+
+            <a href="#FAQs">FAQs</a>
+            
+            <a href="#Privacy_policy">Privacy policy</a>
+
+      </div>
+
+    </div>
+
+    <div class="footer--background">
+      <div class="container">
+
         <div class="reseauInfos">
+
           <p>
             Fait par : Saintus Jean Oldor - Pellizzari Angélique - Lemire Lindsay
           </p>
-          <p>
-            <i class="fab fa-facebook"></i>
-            <i class="fab fa-twitter-square"></i>
-            <i class="fab fa-instagram"></i><i class="fab fa-youtube"></i>
-          </p>
 
-          <p>
-            <a class="btn-tel" href="tel:+15147308206">
-              <img
-                class="img-tel-courriel"
-                src="images/img-phone2.png"
-                alt="logo phone"
-              />
-              5147308206</a
-            >
-          </p>
+          <div class="reseauInfos__sociaux">
+            <img src="images/facebook-icon.png" alt="Icone Facebook" />
+            <img src="images/linkedin-icon.png" alt="Icone Linkedin" />
+            <img src="images/twitter-icon.png" alt="Icone Twitter" />
+            <img src="images/instagram-icon.png" alt="Icone Instagram" />
+          </div>
 
-          <p>
-            <a class="reseauInfos__mail" href="mailto:josinfo@gmail.com">
-              <img
-                class="reseauInfos__img"
-                src="images/img-mail2.png"
-                alt="logo mail"
-              />josinfo@gmail.com</a
-            >
-          </p>
+          <div class="reseauInfos__rejoindre">
+
+            <div class="reseauInfos__rejoindre--flex">
+              <img src="images/img-phone2.png" alt="logo phone" />
+              <a href="tel:+15147308206">514 730-8206</a>
+            </div>
+
+            <div class="reseauInfos__rejoindre--flex">
+              <img src="images/img-mail2.png" alt="logo mail" />
+              <a href="mailto:josinfo@gmail.com">josinfo@gmail.com</a>
+            </div>
+
+          </div>
+
         </div>
+
       </div>
-    </footer>
-  </body>
+
+    </div>
+
+  </footer>
+
+</body>
+
 </html>
