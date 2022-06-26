@@ -212,6 +212,7 @@ textarea:focus {
     display: flex;
     width: 75%;
     bottom: 150px;
+    height: 5vh;
   }
 
   .contacts__form {
@@ -222,13 +223,22 @@ textarea:focus {
   }
 
   .btn-form {
-    width: 75%;
-    padding: 0.5rem;
+    width: 46%;
+    margin: 0 auto;
+    font-size: 1.5rem;
+    padding: 0 6rem;
   }
 }
 @media screen and (max-width: 700px) {
   .contacts__title {
     font-size: 1.3rem;
+  }
+
+  .btn-form {
+    width: 46%;
+    margin: 0 auto;
+    font-size: 1.5rem;
+    padding: 0 6rem;
   }
 }
 #image-grid1 {
