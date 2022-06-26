@@ -17,14 +17,23 @@ body {
   font-family: "Open Sans", sans-serif;
   line-height: 1.5;
   font-size: 1rem;
-  background-color: variables.$color-bg;/* a remplacer par $color-bg*/
-  color: variables.$color-text; /* a remplacer par $color-text*/
+  background-color: variables.$color-bg;
+  /* a remplacer par $color-bg*/
+  color: variables.$color-text;
+  /* a remplacer par $color-text*/
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: variables.$font-title; /* a remplacer par $font-title*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: variables.$font-title;
+  /* a remplacer par $font-title*/
   font-weight: 500;
-  color: variables.$color-blue3 /* a remplacer par $color-blue3*/
+  color: variables.$color-blue3
+    /* a remplacer par $color-blue3*/
 }
 
 h1 {
@@ -37,21 +46,23 @@ h1 {
   margin: 0 auto;
 }
 
-hr{
+hr {
   width: 90%;
   max-width: 1200px;
-  border: 1px solid variables.$color-skin; /* a remplacer par $color-skin*/
+  border: 1px solid variables.$color-skin;
+  /* a remplacer par $color-skin*/
   margin: 20px auto;
 }
 
 //====== header et navigation principale ======//
 header {
   padding: 2rem;
-  background-color: variables.$color-skin; /* a remplacer par $color-skin*/
+  background-color: variables.$color-skin;
+  /* a remplacer par $color-skin*/
   margin-bottom: 2rem;
 }
 
-.header__logo{
+.header__logo {
   display: flex;
   align-items: flex-start;
   justify-content: left;
@@ -72,17 +83,17 @@ nav {
   width: 100%;
   margin: 0 auto;
 
-  & ul{
+  & ul {
     list-style-type: none;
   }
-  
-  & ul::after{
+
+  & ul::after {
     content: "";
     display: table;
     clear: both;
   }
 
-  & ul li{
+  & ul li {
     float: left;
     width: 25%;
     text-align: center;
@@ -91,33 +102,37 @@ nav {
 
   & li {
     display: inline-block;
-  
+
     & a {
       display: block;
       text-decoration: none;
       padding: 0.5rem 1rem;
       font-size: 1rem;
-      color: variables.$color-blue3; /* a remplacer par $color-blue3*/
+      color: variables.$color-blue3;
+      /* a remplacer par $color-blue3*/
       border-bottom: 2px solid transparent;
     }
-  
+
     & a:hover {
       background-color: rgba(255, 255, 255, 0.20);
-      border-bottom: 2px solid variables.$color-violet; /* a remplacer par $color-violet*/
-      color: variables.$color-blue1; /* a remplacer par $color-blue1*/
+      border-bottom: 2px solid variables.$color-violet;
+      /* a remplacer par $color-violet*/
+      color: variables.$color-blue1;
+      /* a remplacer par $color-blue1*/
     }
   }
 }
 
 
-nav > ul li:hover .nav__ul--sous{
+nav>ul li:hover .nav__ul--sous {
   display: block;
 }
 
 .nav__ul--sous {
   display: none;
   box-shadow: 0px 1px 2px #ccc;
-  background-color: variables.$color-bg; /* a remplacer par $color-bg*/
+  background-color: variables.$color-bg;
+  /* a remplacer par $color-bg*/
   position: absolute;
   width: 100%;
   z-index: 1000;
@@ -135,12 +150,13 @@ nav > ul li:hover .nav__ul--sous{
 
   & a:hover {
     border-bottom: none;
-    background-color: rgba(200,200,200,0.1);
-    color: variables.$color-blue1; /* a remplacer par $color-blue1*/
+    background-color: rgba(200, 200, 200, 0.1);
+    color: variables.$color-blue1;
+    /* a remplacer par $color-blue1*/
   }
 }
 
-.nav__li--deroulant > a::after{
+.nav__li--deroulant>a::after {
   content: " ▼";
   font-size: 0.8rem;
 }
@@ -162,7 +178,8 @@ nav > ul li:hover .nav__ul--sous{
 
 //===== section 1 -carrousel =====//
 .banniere {
-  border: 2px solid variables.$color-violet; /* a remplacer par $color-violet*/
+  border: 2px solid variables.$color-violet;
+  /* a remplacer par $color-violet*/
   //   width: 640px;
   //   overflow: auto;
   overflow: hidden;
@@ -185,25 +202,31 @@ nav > ul li:hover .nav__ul--sous{
   0% {
     transform: translateX(0);
   }
+
   25% {
     transform: translateX(-640px);
   }
+
   50% {
     transform: translateX(-1280px);
   }
+
   75% {
     transform: translateX(-1920px);
   }
+
   100% {
     transform: translateX(0px);
   }
 }
+
 // ===== fin banniere-carrousel =====//
 
 // =========Section 2 Newsletter + À propos =========//
 #section2 {
   font-style: 300;
 }
+
 .newsletter {
   display: flex;
   flex-wrap: wrap;
@@ -216,7 +239,7 @@ nav > ul li:hover .nav__ul--sous{
   flex-wrap: nowrap;
   margin: 1rem auto;
 
-  &--bg{
+  &--bg {
     background-color: variables.$color-skin;
     width: 100%;
     height: 15vh;
@@ -225,15 +248,15 @@ nav > ul li:hover .nav__ul--sous{
     font-size: 1.3rem;
     font-family: 'Shadows Into Light', cursive;
   }
- 
 
-  &__card{
+
+  &__card {
     width: 100%;
     justify-content: space-between;
   }
 
   &__card--size {
-    width: 32%; 
+    width: 32%;
   }
 }
 
@@ -242,20 +265,23 @@ nav > ul li:hover .nav__ul--sous{
   border-radius: 50%;
 }
 
-.btn{
+.btn {
   margin: 0.5rem 1rem;
   padding: 0.5rem 1rem;
   border-radius: 0.5rem;
   border: none;
-  background-color: variables.$color-blue2; /* a remplacer par $color-blue2*/
-  color: variables.$color-bg; /* a remplacer par $color-bg*/
+  background-color: variables.$color-blue2;
+  /* a remplacer par $color-blue2*/
+  color: variables.$color-bg;
+  /* a remplacer par $color-bg*/
 
-  &:hover{
-    background-color: variables.$color-violet; /* a remplacer par $color-violet*/
+  &:hover {
+    background-color: variables.$color-violet;
+    /* a remplacer par $color-violet*/
   }
 }
 
-.btn-stat{
+.btn-stat {
   @extend .btn;
   margin: 0.5rem 0;
 }
@@ -266,7 +292,7 @@ nav > ul li:hover .nav__ul--sous{
   margin: 0 0 1rem 1.3rem;
   font-size: 1.5rem;
 
-  &:hover{
+  &:hover {
     cursor: pointer;
   }
 }
@@ -282,62 +308,69 @@ nav > ul li:hover .nav__ul--sous{
 
 // =========Footer==========//
 
-i {
-  padding-right: 1rem;
-  color: variables.$color-blue3; /* a remplacer par $color-blue3*/
-}
-
-.navFooter {
+.footer__nav{
   display: flex;
   justify-content: space-between;
-  padding: 2rem 0 2rem 2rem;
-  font-size: 2rem;
-  text-decoration: underline;
+
+  a {
+    text-decoration: none;
+    color : variables.$color-text;
+    margin:2% 0% 2% 0%;
+  }
 }
 
-.navFooter,
-.navFooter__liste {
-  display: inline-block;
-  padding: 1rem 0 1rem 1rem;
-  text-decoration: none;
-}
-
-.nav__logoFooter {
+.footer__logo {
   text-align: center;
-  margin-top: 1.8rem;
-}
-/*
-.navFooter {
-  width: 100%;
+  width: 50%;
   margin: 0 auto;
-
-  & ul{
-    list-style-type: none;
-  }
-
-  & ul::after{
-    content: "";
-    display: table;
-    clear: both;
-  }
-
-  & ul li{
-    float: left;
-    width: 25%;
-    text-align: center;
-    position: relative;
-  }
-  
 }
-*/
-
 
 .reseauInfos {
   display: flex;
   justify-content: space-between;
+  align-items: flex-start;
+
+  p {
+    width: 450%;
+  }
+  
 }
 
-.reseauInfos__mail,
-.reseauInfos__img {
-  vertical-align: middle;
+.footer--background {
+  background-color: variables.$color-skin;
+  padding: 3% 0% 3% 0%;
+}
+
+
+.reseauInfos__rejoindre--flex {
+  display: flex;
+  align-items: center;
+
+  a {
+    color: variables.$color-text;
+    width: 8rem;
+  }
+
+}
+
+.reseauInfos__rejoindre {
+  display: flex;
+  width: 29%;
+}
+
+.reseauInfos__sociaux {
+  display: flex;
+  justify-content: center;
+
+  img {
+    width: 10%;
+    height: 50%;
+    margin: 1%
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  .reseauInfos__rejoindre {
+    flex-direction: column;
+  }
 }
