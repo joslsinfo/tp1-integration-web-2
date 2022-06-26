@@ -31,7 +31,7 @@
   background-color: #c9ada7;
   position: absolute;
   top: 125px;
-  bottom: 88px;
+  height: 100%;
   left: 53%;
   right: 7%;
 }
@@ -74,25 +74,6 @@ textarea:focus {
   overflow: auto;
 }
 
-.contacts__btn, .contacts__btn:focus {
-  width: 30%;
-  /* border: none;
-   outline: none;
-   background-color:  variables.$color-blue2;
-   padding: 0.5rem 0.7rem;
-   color:  variables.$color-bg;*/
-  margin: 0 0 1rem 1.3rem;
-  font-size: 1.8rem;
-}
-.contacts__btn:focus {
-  font-size: 2rem;
-}
-.contacts__btn:hover {
-  background-color: #4a4e69;
-  color: #f2e9e4;
-  cursor: pointer;
-}
-
 @media screen and (max-width: 960px) {
   .contacts__txtInput, .contacts__txtMail, .contacts__txtArea {
     display: flex;
@@ -107,7 +88,7 @@ textarea:focus {
     right: 7%;
   }
 
-  .contacts__btn, .contacts__btn:focus {
+  .btn-form {
     width: 75%;
     padding: 0.5rem;
   }
