@@ -415,8 +415,8 @@ hr {
 
 .banniere__images {
   display: flex;
-  -webkit-animation-duration: 30s;
-          animation-duration: 30s;
+  -webkit-animation-duration: 10s;
+          animation-duration: 10s;
   -webkit-animation-name: carousselImages;
           animation-name: carousselImages;
   height: 30vh;
@@ -430,13 +430,13 @@ hr {
     transform: translateX(0);
   }
   25% {
-    transform: translateX(-640px);
+    transform: translateX(-40px);
   }
   50% {
-    transform: translateX(-1280px);
+    transform: translateX(-80px);
   }
   75% {
-    transform: translateX(-1920px);
+    transform: translateX(-160px);
   }
   100% {
     transform: translateX(0px);
@@ -448,13 +448,13 @@ hr {
     transform: translateX(0);
   }
   25% {
-    transform: translateX(-640px);
+    transform: translateX(-40px);
   }
   50% {
-    transform: translateX(-1280px);
+    transform: translateX(-80px);
   }
   75% {
-    transform: translateX(-1920px);
+    transform: translateX(-160px);
   }
   100% {
     transform: translateX(0px);
