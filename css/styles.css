@@ -194,24 +194,6 @@ textarea:focus {
   display: flex;
 }
 
-.statistique__button {
-  text-decoration: none;
-  background-color: #f2e9e4;
-  color: #14141d;
-  font-weight: 800;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 30px;
-  padding-right: 30px;
-  margin-top: 5%;
-  border: 3px solid #14141d;
-}
-.statistique__button:hover {
-  background-color: #14141d;
-  color: #f2e9e4;
-  border: 3px solid #22223b;
-}
-
 @media screen and (max-width: 500px) {
   .statistique {
     flex-direction: column;
@@ -229,7 +211,7 @@ body {
   font-size: 1rem;
   background-color: #f2e9e4;
   /* a remplacer par $color-bg*/
-  color: #060606;
+  color: #14141d;
   /* a remplacer par $color-text*/
 }
 
@@ -238,7 +220,6 @@ h1, h2, h3, h4, h5, h6 {
   /* a remplacer par $font-title*/
   font-weight: 500;
   color: #22223b;
-  /* a remplacer par $color-blue3*/
 }
 
 h1 {
@@ -310,12 +291,15 @@ nav li a {
   padding: 0.5rem 1rem;
   font-size: 1rem;
   color: #22223b;
+  /* a remplacer par $color-blue3*/
   border-bottom: 2px solid transparent;
 }
 nav li a:hover {
   background-color: rgba(255, 255, 255, 0.2);
   border-bottom: 2px solid #9a8c98;
+  /* a remplacer par $color-violet*/
   color: #4a4e69;
+  /* a remplacer par $color-blue1*/
 }
 
 nav > ul li:hover .nav__ul--sous {
@@ -326,6 +310,7 @@ nav > ul li:hover .nav__ul--sous {
   display: none;
   box-shadow: 0px 1px 2px #ccc;
   background-color: #f2e9e4;
+  /* a remplacer par $color-bg*/
   position: absolute;
   width: 100%;
   z-index: 1000;
@@ -343,6 +328,7 @@ nav > ul li:hover .nav__ul--sous {
   border-bottom: none;
   background-color: rgba(200, 200, 200, 0.1);
   color: #4a4e69;
+  /* a remplacer par $color-blue1*/
 }
 
 .nav__li--deroulant > a::after {
@@ -365,7 +351,8 @@ nav > ul li:hover .nav__ul--sous {
 }
 
 .banniere {
-  border: 1px solid #060606;
+  border: 2px solid #9a8c98;
+  /* a remplacer par $color-violet*/
   overflow: hidden;
   margin-bottom: 2rem;
 }
@@ -461,10 +448,13 @@ nav > ul li:hover .nav__ul--sous {
   border-radius: 0.5rem;
   border: none;
   background-color: #383858;
+  /* a remplacer par $color-blue2*/
   color: #f2e9e4;
+  /* a remplacer par $color-bg*/
 }
 .btn:hover {
   background-color: #9a8c98;
+  /* a remplacer par $color-violet*/
 }
 
 .cards {
@@ -474,6 +464,7 @@ nav > ul li:hover .nav__ul--sous {
 i {
   padding-right: 1rem;
   color: #22223b;
+  /* a remplacer par $color-blue3*/
 }
 
 .navFooter {
