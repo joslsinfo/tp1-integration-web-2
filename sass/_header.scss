@@ -1,0 +1,103 @@
+@use 'variables';
+
+header {
+    padding: 2rem;
+    background-color: variables.$color-skin; /* a remplacer par $color-skin*/
+    margin-bottom: 2rem;
+  }
+  
+  .header__logo{
+    display: flex;
+    align-items: flex-start;
+    justify-content: left;
+  }
+  
+  .logo {
+    width: 15%;
+  }
+  
+  .header__nav--flex {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  nav {
+    width: 100%;
+    margin: 0 auto;
+  
+    & ul{
+      list-style-type: none;
+    }
+    
+    & ul::after{
+      content: "";
+      display: table;
+      clear: both;
+    }
+  
+    & ul li{
+      float: left;
+      width: 25%;
+      text-align: center;
+      position: relative;
+    }
+  
+    & li {
+      display: inline-block;
+    
+      & a {
+        display: block;
+        text-decoration: none;
+        padding: 0.5rem 1rem;
+        font-size: 1rem;
+        color: variables.$color-blue3; /* a remplacer par $color-blue3*/
+        border-bottom: 2px solid transparent;
+      }
+    
+      & a:hover {
+        background-color: rgba(255, 255, 255, 0.20);
+        border-bottom: 2px solid variables.$color-violet; /* a remplacer par $color-violet*/
+        color: variables.$color-blue1; /* a remplacer par $color-blue1*/
+      }
+    }
+  }
+  
+  
+  nav > ul li:hover .nav__ul--sous{
+    display: block;
+  }
+  
+  .nav__ul--sous {
+    display: none;
+    box-shadow: 0px 1px 2px #ccc;
+    background-color: variables.$color-bg; /* a remplacer par $color-bg*/
+    position: absolute;
+    width: 100%;
+    z-index: 1000;
+  
+    & li {
+      float: none;
+      width: 100%;
+      text-align: left;
+    }
+  
+    & a {
+      padding: 0.5rem 1rem;
+      border-bottom: none;
+    }
+  
+    & a:hover {
+      border-bottom: none;
+      background-color: rgba(200,200,200,0.1);
+      color: variables.$color-blue1; /* a remplacer par $color-blue1*/
+    }
+  }
+  
+  .nav__li--deroulant > a::after{
+    content: " ▼";
+    font-size: 0.8rem;
+  }
+  
+  
