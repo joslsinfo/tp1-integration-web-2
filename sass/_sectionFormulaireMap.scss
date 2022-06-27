@@ -89,9 +89,9 @@ textarea:focus {
   }
   .btn-form {
 
-    width: 46%;
+    width: 50%;
     margin: 0 auto;
-    // margin: 0 0 1rem 1.3rem;
+    margin: 0 0 1rem 1.3rem;
     font-size: 1.5rem;
     // width: 75%;
     padding: 0 6rem;
@@ -99,21 +99,22 @@ textarea:focus {
   }
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 950px) {
   .contacts__title {
     font-size: 1.3rem;
   }
 
   .btn-form {
 
-    width: 46%;
+    width: 57%;
     margin: 0 auto;
-    // margin: 0 0 1rem 1.3rem;
+    margin: 0 0 1rem 1.3rem;
     font-size: 1.5rem;
     // width: 75%;
     padding: 0 6rem;
 
   }
+ 
   
 }
 
